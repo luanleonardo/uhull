@@ -9,8 +9,6 @@ Note
 
 > -   uhull! (Brazil) yeah! (expresses joy or celebration)
 
-![image](data/img/uhull_homer.jpg)
-
 
 Concave hull for geographic coordinate points
 ---------------------------------------------
