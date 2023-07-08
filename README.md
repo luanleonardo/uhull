@@ -1,15 +1,16 @@
-Concave hull
+Uhull\*
 ===============
 
 A simple (but not simpler) algorithm for concave hull of 2D point sets
 using an alpha shape algorithm.
 
+Note
+----
 
-### Installation
+> -   uhull! (Brazil) yeah! (expresses joy or celebration)
 
-```bash
-pip install concavehull
-```
+![image](data/img/uhull_homer.jpg)
+
 
 Concave hull for geographic coordinate points
 ---------------------------------------------
@@ -29,6 +30,12 @@ Concave hull for geographic coordinate points
 -   You can find the code to generate the interactive maps
     [here](data/ipynb/concave_hull_geographic_coordinates.ipynb).
 
+### Installation
+
+```bash
+pip install uhull
+```
+
 ### Quickstart
 
 Concave hull for 2D points
@@ -42,7 +49,7 @@ We can find the `polygons` that form the concave hull of the set as
 follows:
 
 ```python
-from concavehull.alpha_shape import get_alpha_shape_polygons
+from uhull.alpha_shape import get_alpha_shape_polygons
 
 points = [
     (0.0, 0.0),
@@ -82,7 +89,7 @@ As an example, notice that by doubling the default value of alpha, we
 get the convex hull:
 
 ```python
-from concavehull.alpha_shape import get_alpha_shape_polygons
+from uhull.alpha_shape import get_alpha_shape_polygons
 
 points = [
     (0.0, 0.0),
@@ -103,7 +110,7 @@ As another example let\'s define a distance function and get concave
 hull with it.
 
 ```python
-from concavehull.alpha_shape import get_alpha_shape_polygons
+from uhull.alpha_shape import get_alpha_shape_polygons
 
 
 def manhattan_distance(coord1, coord2):
@@ -130,7 +137,8 @@ polygons = get_alpha_shape_polygons(
 -   You can find code to generate quickstart images
     [here](data/ipynb/quickstart.ipynb).
 
+
 GitHub
 ----
 
-* [Repository](https://github.com/luanleonardo/concavehull)
+* [Repository](https://github.com/luanleonardo/uhull)

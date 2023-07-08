@@ -2,12 +2,12 @@ from typing import Callable, Dict, List, Set, Tuple
 
 import numpy as np
 
-from concavehull.geometry import (
+from uhull.geometry import (
     area_of_polygon,
     delaunay_triangulation,
     haversine_distance,
 )
-from concavehull.graph import Graph, shortest_path_algorithm
+from uhull.graph import Graph, shortest_path_algorithm
 
 
 def _get_alpha_triangulation(

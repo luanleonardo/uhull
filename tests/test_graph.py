@@ -1,11 +1,7 @@
 import pytest
 
-from concavehull.geometry import euclidean_distance
-from concavehull.graph import (
-    Graph,
-    dijkstra_algorithm,
-    shortest_path_algorithm,
-)
+from uhull.geometry import euclidean_distance
+from uhull.graph import Graph, dijkstra_algorithm, shortest_path_algorithm
 
 
 @pytest.fixture

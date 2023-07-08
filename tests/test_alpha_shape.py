@@ -1,8 +1,8 @@
 import numpy as np
 import pytest
 
-from concavehull.alpha_shape import get_alpha_shape_polygons
-from concavehull.geometry import area_of_polygon, euclidean_distance
+from uhull.alpha_shape import get_alpha_shape_polygons
+from uhull.geometry import area_of_polygon, euclidean_distance
 
 
 @pytest.fixture

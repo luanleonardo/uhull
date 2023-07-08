@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 
-from concavehull.geometry import (
+from uhull.geometry import (
     area_of_polygon,
     delaunay_triangulation,
     euclidean_distance,
