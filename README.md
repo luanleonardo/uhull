@@ -6,6 +6,11 @@ Note
 
 > -   uhull! (Brazil) yeah! (expresses joy or celebration)
 
+### Installation
+
+```bash
+pip install uhull
+```
 
 Concave hull for geographic coordinate points
 ---------------------------------------------
@@ -24,12 +29,6 @@ Concave hull for geographic coordinate points
 
 -   You can find the code to generate the interactive maps
     [here](data/ipynb/concave_hull_geographic_coordinates.ipynb).
-
-### Installation
-
-```bash
-pip install uhull
-```
 
 ### Quickstart
 
