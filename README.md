@@ -1,21 +1,33 @@
-Concave uhull\*
+Concave hull
 ===============
 
 A simple (but not simpler) algorithm for concave hull of 2D point sets
 using an alpha shape algorithm.
 
-Note
-----
-
-> -   uhull! (Brazil) yeah! (expresses joy or celebration)
-
-![image](data/img/uhull_homer.jpg)
 
 ### Installation
 
 ```bash
-pip install concave_uhull
+pip install concavehull
 ```
+
+Concave hull for geographic coordinate points
+---------------------------------------------
+
+-   [Interactive map of points in Rio de Janeiro, Brazil](data/maps/points_rio_de_janeiro_brazil.html)
+
+![image](data/img/points_rio_de_janeiro_brazil.png)
+
+-   [Interactive map of points in Brasília, Brazil](data/maps/points_brasilia_brazil.html)
+
+![image](data/img/points_brasilia_brazil.png)
+
+-   [Interactive map of points in Pará, Brazil](data/maps/points_para_brazil.html)
+
+![image](data/img/points_para_brazil.png)
+
+-   You can find the code to generate the interactive maps
+    [here](data/ipynb/concave_hull_geographic_coordinates.ipynb).
 
 ### Quickstart
 
@@ -30,7 +42,7 @@ We can find the `polygons` that form the concave hull of the set as
 follows:
 
 ```python
-from concave_uhull.alpha_shape import get_alpha_shape_polygons
+from concavehull.alpha_shape import get_alpha_shape_polygons
 
 points = [
     (0.0, 0.0),
@@ -70,7 +82,7 @@ As an example, notice that by doubling the default value of alpha, we
 get the convex hull:
 
 ```python
-from concave_uhull.alpha_shape import get_alpha_shape_polygons
+from concavehull.alpha_shape import get_alpha_shape_polygons
 
 points = [
     (0.0, 0.0),
@@ -91,7 +103,7 @@ As another example let\'s define a distance function and get concave
 hull with it.
 
 ```python
-from concave_uhull.alpha_shape import get_alpha_shape_polygons
+from concavehull.alpha_shape import get_alpha_shape_polygons
 
 
 def manhattan_distance(coord1, coord2):
@@ -118,26 +130,7 @@ polygons = get_alpha_shape_polygons(
 -   You can find code to generate quickstart images
     [here](data/ipynb/quickstart.ipynb).
 
-Concave hull for geographic coordinate points
----------------------------------------------
-
--   [Interactive map of points in Brasília, Brazil](data/maps/points_brasilia_brazil.html)
-
-![image](data/img/points_brasilia_brazil.png)
-
--   [Interactive map of points in Pará, Brazil](data/maps/points_para_brazil.html)
-
-![image](data/img/points_para_brazil.png)
-
--   [Interactive map of points in Rio de Janeiro, Brazil](data/maps/points_rio_de_janeiro_brazil.html)
-
-![image](data/img/points_rio_de_janeiro_brazil.png)
-
--   You can find the code to generate the interactive maps
-    [here](data/ipynb/concave_hull_geographic_coordinates.ipynb).
-
-
 GitHub
 ----
 
-* [Repository](https://github.com/luanleonardo/concave_uhull)
+* [Repository](https://github.com/luanleonardo/concavehull)
